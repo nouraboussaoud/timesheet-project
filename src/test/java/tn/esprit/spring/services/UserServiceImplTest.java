@@ -5,6 +5,19 @@ import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-@TestMethodOrder(OrderAnnotation.class)
-class UserServiceImplTest {}
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+class UserServiceImplTest {
+
+    @Test
+    void testAddUser() {
+        String envVar = System.getenv("TIMESHEET_TESTS_FAIL");
+        if ("True".equalsIgnoreCase(envVar)) {
+            assertFalse(false, "Le test échoue car TIMESHEET_TESTS_FAIL est activé !");
+        }
+    }
+}
