@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tn.esprit.spring.services.UserServiceImplTest" time="0.007" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tn.esprit.spring.services.UserServiceImplMockTest" time="4.999" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -51,5 +51,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAddUser" classname="tn.esprit.spring.services.UserServiceImplTest" time="0.006"/>
+  <testcase name="testAddUser" classname="tn.esprit.spring.services.UserServiceImplMockTest" time="4.887"/>
+  <testcase name="testUpdateUser" classname="tn.esprit.spring.services.UserServiceImplMockTest" time="0.019"/>
+  <testcase name="testDeleteUser" classname="tn.esprit.spring.services.UserServiceImplMockTest" time="0.005"/>
 </testsuite>
